@@ -8,21 +8,18 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['390371717717', 'nobody|'],
-  ['393518398856', 'nobody|'],
-  ['393755775755', 'nobody|'],
-  ['393755575577', 'nobody|'],
-  ['33760536110', 'nobody|'],
+  ['393516061436', 'nobody|'],
+  
 ]
-global.suittag = ['390371717717'] 
-global.prems = ['390371717717'] 
-global.reportes_solicitudes = ['390371717717']
+global.suittag = ['393516061436'] 
+global.prems = ['393516061436'] 
+global.reportes_solicitudes = ['393516061436']
 
-global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★ცơɬῳɧąıɬą★'
-global.wm = '★ცơɬῳɧąıɬą ★'
+global.packname = '𝔊𝔥𝔬𝔰𝔱'
+global.author = '𝔊𝔥𝔬𝔰𝔱'
+global.wm = '𝔊𝔥𝔬𝔰𝔱'
 global.vs = '4.0'
-global.igfg = '★ცơɬῳɧąıɬą★'
+global.igfg = '𝔊𝔥𝔬𝔰𝔱'
 global.wait = '*[❗]⌛ _Caricando..._*\n*▰▰▰▱▱▱▱▱*'
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
@@ -42,15 +39,15 @@ global.mes = d.toLocaleDateString('it', { month: 'long' })
 global.año = d.toLocaleDateString('it', { year: 'numeric' })
 global.tiempo = d.toLocaleString('it', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //*****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ ცơɬῳɧąıɬą`
-global.gt = '★ცơɬῳɧąıɬą★'
-global.mysticbot = '★ცơɬῳɧąıɬą★'
+global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝔊𝔥𝔬𝔰𝔱`
+global.gt = '𝔊𝔥𝔬𝔰𝔱'
+global.mysticbot = '𝔊𝔥𝔬𝔰𝔱'
 global.md = 'https://github.com/Fabri115/botwhaita'
 global.mysticbot = 'https://github.com/Fabri115/botwhaita'
 global.waitt = '*[❗] ⌛ _Caricando..._*\n*▰▰▰▱▱▱▱▱*'
 global.waittt = '*[❗]⌛ _Caricando..._*\n*▰▰▰▱▱▱▱▱*'
 global.waitttt = '*[❗] ⌛ _Caricando..._*\n*▰▰▰▱▱▱▱▱*'
-global.nomorown = '393518398856'
+global.nomorown = '393516061436'
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf']
 global.cmenut = '❖––––––╔'
 global.cmenur = '╝––––––❖'
