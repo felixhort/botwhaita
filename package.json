@@ -1,5 +1,5 @@
 {
-    "name": "botwhaita",
+    "name": "Ghost",
     "version": "3.0.0",
     "description": "enjoy",
     "main": "index.js",
@@ -16,7 +16,7 @@
     },
     "homepage": "https://github.com/Fabri115/botwhaita",
     "author": {
-        "name": "Fabri115"
+        "name": "felix"
     },
     "repository": {
         "type": "git",
