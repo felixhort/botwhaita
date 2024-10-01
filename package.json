@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "https://github.com/Fabri115/botwhaita",
+    "homepage": "https://github.com/felixhort/botwhaita",
     "author": {
         "name": "felix"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Fabri115/botwhaita.git"
+        "url": "git+https://github.com/felixhort/botwhaita.git"
     },
     "bugs": {
-        "url": "https://github.com/Fabri115/botwhaita/issues"
+        "url": "https://github.com/felixhort/botwhaita/issues"
     },
  "license": "GPL-3.0-or-later",
   "dependencies": {
