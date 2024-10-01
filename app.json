@@ -1,10 +1,10 @@
 {
-  "name": "TheMystic-Bot-MD",
-  "website": "https://github.com/BrunoSobrino",
+  "name": "𝔊𝔥𝔬𝔰𝔱",
+  "website": "https://github.com/felixhort",
   "description": "Subscribete a The Shadow Borkers - Bot (≧▽≦)",
-  "repository": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+  "repository": "https://github.com/felixhort/TheMystic-Bot-MD",
   "logo": "https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+  "success_url": "https://github.com/felixhort/TheMystic-Bot-MD",
   "keywords": [
     "nodejs",
     "heroku",
