@@ -62,13 +62,13 @@ export async function handler(chatUpdate) {
       }
       if (user) {
         if (!isNumber(user.messaggi)) user.messaggi = 0;
-        if (!('muto' in user)) user.muto = false;
+        if (!('muto' in user)) user.muto = true;
         if (!isNumber(user.exp)) user.exp = 0;
-        if (!('premium' in user)) user.premium = false;
+        if (!('premium' in user)) user.premium = true;
         if (!isNumber(user.joincount)) user.joincount = 2;
         if (!isNumber(user.limit)) user.limit = 20;
         if (!isNumber(user.money)) user.money = 15;
-        if (!('registered' in user)) user.registered = false;
+        if (!('registered' in user)) user.registered = true;
         if (!user.registered) {
           if (!('name' in user)) user.name = m.name;
           if (!isNumber(user.age)) user.age = -1;
@@ -193,7 +193,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.fullatm)) user.fullatm = 0;
         if (!isNumber(user.gadodado)) user.gadodado = 0;
         if (!isNumber(user.gajah)) user.gajah = 0;
-        if (!isNumber(user.gamemines)) user.gamemines = false;
+        if (!isNumber(user.gamemines)) user.gamemines = true;
         if (!isNumber(user.ganja)) user.ganja = 0;
         if (!isNumber(user.gardenboxs)) user.gardenboxs = 0;
         if (!isNumber(user.gems)) user.gems = 0;
@@ -444,7 +444,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.seedwortel)) user.seedwortel = 0;
         if (!isNumber(user.serigala)) user.serigala = 0;
         if (!isNumber(user.serigalalastclaim)) user.serigalalastclaim = 0;
-        if (!isNumber(user.shield)) user.shield = false;
+        if (!isNumber(user.shield)) user.shield = true;
         if (!isNumber(user.skillexp)) user.skillexp = 0;
         if (!isNumber(user.snlast)) user.snlast = 0;
         if (!isNumber(user.soda)) user.soda = 0;
@@ -489,14 +489,14 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.wortel)) user.wortel = 0;
         if (!user.lbars) user.lbars = '[▒▒▒▒▒▒▒▒▒]';
         if (!user.job) user.job = 'Desempleo';
-        if (!user.premium) user.premium = false;
+        if (!user.premium) user.premium = true;
         if (!user.premium) user.premiumTime = 0;
         if (!user.wait) user.wait = 0;
         if (!user.rtrofi) user.rtrofi = 'Bronce';
       } else {
         global.db.data.users[m.sender] = {
         messaggi: 0, 
-        muto: false,
+        muto: true,
 		    afk: -1,
 		    wait: 0,
           afkReason: '',
@@ -541,9 +541,9 @@ export async function handler(chatUpdate) {
           babipanggang: 0,
           bandage: 0,
           bank: 0,
-          banned: false,
+          banned: true,
           BannedReason: '',
-          Banneduser: false,
+          Banneduser: true,
           banteng: 0,
           batu: 0,
           bawal: 0,
@@ -605,7 +605,7 @@ export async function handler(chatUpdate) {
           fullatm: 0,
           gadodado: 0,
           gajah: 0,
-          gamemines: false,
+          gamemines: true,
           ganja: 0,
           gardenboxs: 0,
           gems: 0,
@@ -821,7 +821,7 @@ export async function handler(chatUpdate) {
           ramuanphonixlast: 0,
           ramuanrubahlast: 0,
           ramuanserigalalast: 0,
-          registered: false,
+          registered: true,
           reglast: 0,
           regTime: -1,
           rendang: 0,
@@ -932,56 +932,56 @@ export async function handler(chatUpdate) {
         global.db.data.chats[m.chat] = {};
       }
       if (chat) {
-        if (!('isBanned' in chat)) chat.isBanned = false;
+        if (!('isBanned' in chat)) chat.isBanned = true;
         if (!('welcome' in chat)) chat.welcome = true;
         if (!('detect' in chat)) chat.detect = true;
-        if (!('detect2' in chat)) chat.detect2 = false;
-        if (!('sWelcome' in chat)) chat.sWelcome = '';
-        if (!('sBye' in chat)) chat.sBye = '';
-        if (!('sPromote' in chat)) chat.sPromote = '';
-        if (!('sDemote' in chat)) chat.sDemote = '';
-        if (!('delete' in chat)) chat.delete = false;
-        if (!('modohorny' in chat)) chat.modohorny = false;
-        if (!('autosticker' in chat)) chat.autosticker = false;
-        if (!('audios' in chat)) chat.audios = false;
-        if (!('antiLink' in chat)) chat.antiLink = false;
-        if (!('antiinsta' in chat)) chat.antiinsta = false;
-        if (!('antilinkgp' in chat)) chat.antilink2 = false
-        if (!('antiviewonce' in chat)) chat.antiviewonce = false;
-        if (!('antiToxic' in chat)) chat.antiToxic = false;
-        if (!('antiTraba' in chat)) chat.antiTraba = false;
-        if (!('antiArab' in chat)) chat.antiArab = false;
-        if (!('antiArab2' in chat)) chat.antiArab2 = false;
-        if (!('antiporno' in chat)) chat.antiporno = false;
-        if (!('modoadmin' in chat)) chat.modoadmin = false;
-        if (!('simi' in chat)) chat.simi = false;
+        if (!('detect2' in chat)) chat.detect2 = true;
+        if (!('sWelcome' in chat)) chat.sWelcome = true';
+        if (!('sBye' in chat)) chat.sBye = true';
+        if (!('sPromote' in chat)) chat.sPromote = true';
+        if (!('sDemote' in chat)) chat.sDemote = true';
+        if (!('delete' in chat)) chat.delete = true;
+        if (!('modohorny' in chat)) chat.modohorny = true;
+        if (!('autosticker' in chat)) chat.autosticker = true;
+        if (!('audios' in chat)) chat.audios = true;
+        if (!('antiLink' in chat)) chat.antiLink = true;
+        if (!('antiinsta' in chat)) chat.antiinsta = true;
+        if (!('antilinkgp' in chat)) chat.antilink2 = true
+        if (!('antiviewonce' in chat)) chat.antiviewonce = true;
+        if (!('antiToxic' in chat)) chat.antiToxic = true;
+        if (!('antiTraba' in chat)) chat.antiTraba = true;
+        if (!('antiArab' in chat)) chat.antiArab = true;
+        if (!('antiArab2' in chat)) chat.antiArab2 = true;
+        if (!('antiporno' in chat)) chat.antiporno = true;
+        if (!('modoadmin' in chat)) chat.modoadmin = true;
+        if (!('simi' in chat)) chat.simi = true;
         if (!isNumber(chat.expired)) chat.expired = 0;
         if (!isNumber(chat.messaggi)) chat.messaggi = 0
       } else {
         global.db.data.chats[m.chat] = {
-          isBanned: false,
+          isBanned: true,
           welcome: true,
           detect: true,
-	  detect2: false,
-          sWelcome: '',
-          sBye: '',
-          sPromote: '',
-          sDemote: '',
-          delete: false,
+	  detect2: true,
+          sWelcome: true',
+          sBye: true',
+          sPromote: true',
+          sDemote: true',
+          delete: true,
           modohorny: true,
-          autosticker: false,
+          autosticker: true,
           audios: true,
-          antiLink: false,
-          antiLinkgp: false,
-          antiinsta: false,
-          antiviewonce: false,
-          antiToxic: false,
-          antiTraba: false,
-          antiArab: false,
-	  antiArab2: false,
-	  antiporno: false,
-	  modoadmin: false,
-	  simi: false,
+          antiLink: true,
+          antiLinkgp: true,
+          antiinsta: true,
+          antiviewonce: true,
+          antiToxic: true,
+          antiTraba: true,
+          antiArab: true,
+	  antiArab2: true,
+	  antiporno: true,
+	  modoadmin: true,
+	  simi: true,
           expired: 0,
           messaggi: 0,
         };
@@ -989,24 +989,24 @@ export async function handler(chatUpdate) {
       const settings = global.db.data.settings[this.user.jid];
       if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {};
       if (settings) {
-        if (!('self' in settings)) settings.self = false;
-        if (!('autoread' in settings)) settings.autoread = false;
-        if (!('autoread2' in settings)) settings.autoread2 = false;
-        if (!('restrict' in settings)) settings.restrict = false;
-        if (!('antiCall' in settings)) settings.antiCall = false;
-        if (!('antiPrivate' in settings)) settings.antiPrivate = false;
+        if (!('self' in settings)) settings.self = true;
+        if (!('autoread' in settings)) settings.autoread = true;
+        if (!('autoread2' in settings)) settings.autoread2 = true;
+        if (!('restrict' in settings)) settings.restrict = true;
+        if (!('antiCall' in settings)) settings.antiCall = true;
+        if (!('antiPrivate' in settings)) settings.antiPrivate = true;
 	if (!('modejadibot' in settings)) settings.modejadibot = true;
-        if (!('antispam' in settings)) settings.antispam = false;
+        if (!('antispam' in settings)) settings.antispam = true;
       } else {
         global.db.data.settings[this.user.jid] = {
-          self: false,
-          autoread: false,
-          autoread2: false,
-          restrict: false,
-          antiCall: false,
-          antiPrivate: false,
+          self: true,
+          autoread: true,
+          autoread2: true,
+          restrict: true,
+          antiCall: true,
+          antiPrivate: true,
 	  modejadibot: true,
-          antispam: false,
+          antispam: true,
         };
       }
     } catch (e) {
